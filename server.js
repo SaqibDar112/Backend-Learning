@@ -55,7 +55,9 @@ app.get('/youtube',(req,res)=>{
     res.send(`<a href="www.youtube.com">Youtube</a>`)
 })
 
-
+app.get('test',(req,res)=>{
+  app.send("Checking git");
+})
 app.get("/github",(req,res)=>{
     res.json(apiGithub);
 })
